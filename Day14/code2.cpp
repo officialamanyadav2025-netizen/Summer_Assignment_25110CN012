@@ -1,0 +1,25 @@
+// Write a program to Frequency of an element.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  int n;
+  int key;
+  int count = 0;
+  cout << "Enter size of array: ";
+  cin >> n;
+  int arr[n];
+  cout << "Enter elements: ";
+  for (int i = 0; i < n; i++) {
+    cin >> arr[i];
+  }
+  cout << "Enter element whose frequency is to be found: ";
+  cin >> key;
+  for (int i = 0; i < n; i++) {
+    if (arr[i] == key)
+      count++;
+  }
+  cout << "Frequency = " << count;
+  return 0;
+}
